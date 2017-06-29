@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "showOutput": "silent",
+    "args": [
+        "/c"
+    ],
+    "tasks": [
+        {
+            "taskName": "🤹",
+            "suppressTaskName": true,
+            "command": "start chrome",
+            "args" : ["${file}"],
+            "showOutput": "always"
+        }
+    ]
+}
