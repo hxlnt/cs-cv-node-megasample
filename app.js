@@ -6,9 +6,11 @@ const port = process.env.port || 3008;
 const oxford = require('project-oxford');
 const client = new oxford.Client(process.env.facekey);
 
+
 server.listen(port);
 app.use(express.static(__dirname + '/public'));
 console.log(`For local testing, point your browser to http://localhost:3008`);
+
 
 // Get data from Face API
 io.on('connection', function (socket) {
